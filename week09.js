@@ -54,3 +54,46 @@
 //const string = `15`;
 //let stringAsNumber = Number(string);
 //console.log(typeof(stringAsNumber));
+
+/*==============Практикум №2====================================
+===========================================================*/
+//let time = '';
+//time= 34;
+//console.log('Старт поездки. Осталось минут: ' + time);
+//time= time-15;
+//console.log('Немного сторис в соцсетях. Осталось минут: '+time);
+//time= time-10;
+//console.log( 'Немного не новостей, но событий. Осталось минут: '+ time);
+//time=0;
+//console.log('Вы приехали. Добро пожаловать в Москву.');
+
+/*==============Практикум №3*====================================
+===========================================================*/
+let interestRate = 18.5;
+
+const deposit = "30000";
+let depositAsn = Number(deposit);
+
+const growth = "150";
+let growthAsN = Number(growth);
+
+const currency = "руб";
+
+console.log("Ваш депозит на начало расчётного периода составлял " + deposit);
+console.log(
+   "Согласно вашему тарифу, вам была присвоена ставка " + interestRate
+);
+console.log(
+   `К концу расчётного периода прирост составил ${
+      growth + currency
+   }., и на данный момент ваш депозит составляет ${
+      depositAsn + growthAsN + currency
+   }`
+);
+//Пользователь должен ввести сумму, которую он хочет внести на вклад. В итого выведите фразу «Через год у вас будет XXX руб. на счету» где вместо ХХХ выведите сколько получится на счету с учётом процентной ставки 7% годовых.
+let deposit1 = 50000;
+let persentage = 7;
+let userRes = (deposit1 / 100) * persentage;
+let depositRes = deposit1 + userRes;
+console.log(`Через год у вас будет ${depositRes} руб. на счету`);
+
